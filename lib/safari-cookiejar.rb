@@ -9,7 +9,8 @@ class SafariCookiejar
 
     def reload
         result = Plist::parse_xml File.expand_path "~/Library/Cookies/Cookies.plist"
-        @tmp_file = Tempfile.new(self.class.name) {|f| result.each {|r| f.write("#{r["Domain"]}\tTRUE\t#{r["Path"]}\tFALSE\t#{r["Expires"].strftime("%s")}\t#{r["Name"]}\t#{r["Value"]}\n")}}
+        @tmp_file = Tempfile.new(self.class.name)
+        result.each {|r| @tmp_file.write("#{r["Domain"]}\tTRUE\t#{r["Path"]}\tFALSE\t#{r["Expires"].strftime("%s")}\t#{r["Name"]}\t#{r["Value"]}\n")}
     end
 
     def run (args)
@@ -23,9 +24,7 @@ class SafariCookiejar
         end,
         @tmp_file.path)
         
-        puts(args)
         Kernel.system *args
-        @tmp_file.close!
     end
 end
 
