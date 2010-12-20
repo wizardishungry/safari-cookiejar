@@ -1,21 +1,13 @@
 #!/usr/bin/env ruby
 
+require './lib/safari-cookiejar'
 
-class SafariCookiejar
-    def usage
-        puts "#{$0} [curl|wget] arguments";
-    end
-    def initialize(argv)
-        @argv = argv
-    end
-    def run
-    end
-end
+#require('rubygems')
 
-jar = SafariCookiejar.new ARGV
+jar = SafariCookiejar.new
 
 if ARGV.empty?
     jar.usage
 else
-    jar.run
+    jar.run(ARGV)
 end
