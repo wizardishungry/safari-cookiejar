@@ -1,48 +1,29 @@
-# Safari-Cookiejar
-
-Calls curl or wget with a cookies.txt generated from Safari's cookie jar.
-
-## Installation
-
-    $ git clone git://github.com/WIZARDISHUNGRY/safari-cookiejar.git
-    $ cd safari-cookiejar
-    $ gem build safari-cookiejar.gemspec 
-    $ sudo gem install safari-cookiejar-_whatever_.gem
-
-## Invocation
-
-Safari Plist code taken from http://seriousorange.com/2010/01/converting-safari-cookies-plist-to-cookies-txt/
-
-
-## Example
-
-bin/safari-cookiejar.rb wget http://www.google.com/reader/public/subscriptions/user/
-
 = safari_cookiejar
 
-* FIX (url)
+* https://github.com/WIZARDISHUNGRY/safari-cookiejar
 
 == DESCRIPTION:
 
-FIX (describe your package)
+* Calls curl or wget with a cookies.txt generated from Safari's cookie jar.
 
 == FEATURES/PROBLEMS:
 
-* FIX (list of features or problems)
+* Developer unfamiliar with Ruby conventions 
 
 == SYNOPSIS:
 
-  FIX (code sample of usage)
+* bin/safari-cookiejar.rb wget http://www.google.com/reader/public/subscriptions/user/
 
 == REQUIREMENTS:
 
-* FIX (list of requirements)
+* plist 
 
 == INSTALL:
 
-* FIX (sudo gem install, anything else)
-
-== DEVELOPERS:
+  $ git clone git://github.com/WIZARDISHUNGRY/safari-cookiejar.git
+  $ cd safari-cookiejar
+  $ sudo rake install_gem
+  == DEVELOPERS:
 
 After checking out the source, run:
 
@@ -55,7 +36,7 @@ and generate the RDoc.
 
 (The MIT License)
 
-Copyright (c) 2010 FIX
+Copyright (c) 2010 Jonathan Williams 
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the

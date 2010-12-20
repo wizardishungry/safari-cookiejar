@@ -9,14 +9,14 @@ require 'hoe'
 # Hoe.plugin :racc
 # Hoe.plugin :rubyforge
 
-Hoe.spec 'safari_cookiejar' do
+Hoe.spec 'safari-cookiejar' do
   # HEY! If you fill these out in ~/.hoe_template/Rakefile.erb then
   # you'll never have to touch them again!
   # (delete this comment too, of course)
 
-  # developer('FIX', 'FIX@example.com')
+  developer('Jon Williams', 'jonathan.williams@gmail.com')
 
-  # self.rubyforge_name = 'safari_cookiejarx' # if different than 'safari_cookiejar'
+  # self.rubyforge_name = 'safari-cookiejar' # if different than 'safari-cookiejar'
 end
 
 # vim: syntax=ruby

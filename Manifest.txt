@@ -3,6 +3,6 @@ History.txt
 Manifest.txt
 README.txt
 Rakefile
-bin/safari_cookiejar
-lib/safari_cookiejar.rb
-test/test_safari_cookiejar.rb
+bin/safari-cookiejar
+lib/safari-cookiejar.rb
+test/test_safari-cookiejar.rb
