@@ -1,4 +1,4 @@
-Gem::Specification.new do |s|
+s = Gem::Specification.new do |s|
   s.name = %q{safari-cookiejar}
   s.version = "0.0.0"
   s.date = %q{2010-12-20}
@@ -9,3 +9,4 @@ Gem::Specification.new do |s|
   s.description = %q{Calls curl or wget with a cookies.txt generated from Safari's cookie jar.}
   s.files = [ "README", "lib/safari-cookiejar.rb"]
 end
+s.add_dependency "plist"
