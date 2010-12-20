@@ -1,4 +1,4 @@
-= safari_cookiejar
+= safari-cookiejar
 
 * https://github.com/WIZARDISHUNGRY/safari-cookiejar
 
@@ -12,7 +12,7 @@
 
 == SYNOPSIS:
 
-* bin/safari-cookiejar.rb wget http://www.google.com/reader/public/subscriptions/user/
+  $ bin/safari-cookiejar.rb curl -o greader-opml.xml http://www.google.com/reader/public/subscriptions/user/ # export google reader subscriptions to OPML
 
 == REQUIREMENTS:
 
@@ -23,7 +23,8 @@
   $ git clone git://github.com/WIZARDISHUNGRY/safari-cookiejar.git
   $ cd safari-cookiejar
   $ sudo rake install_gem
-  == DEVELOPERS:
+
+== DEVELOPERS:
 
 After checking out the source, run:
 
