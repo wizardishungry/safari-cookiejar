@@ -7,6 +7,7 @@ s = Gem::Specification.new do |s|
   s.summary = %q{Calls curl or wget with a cookies.txt generated from Safari's cookie jar}
   s.homepage = %q{http://github.com/WIZARDISHUNGRY/safari-cookiejar}
   s.description = %q{Calls curl or wget with a cookies.txt generated from Safari's cookie jar.}
-  s.files = [ "README", "lib/safari-cookiejar.rb"]
+  s.files = [ "README", "bin/safari-cookiejar.rb" ]
+  s.executables = [ "safari-cookiejar.rb" ]
 end
 s.add_dependency "plist"
