@@ -1,9 +1,8 @@
 #!/usr/bin/env ruby
 
-#require './lib/safari-cookiejar'
+$:.unshift File.join(File.dirname(__FILE__), *%w[.. lib])
 
-require 'rubygems'
-require 'lib/safari-cookiejar'
+require 'safari-cookiejar'
 
 
 if ARGV.empty?

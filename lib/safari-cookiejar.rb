@@ -3,7 +3,7 @@ require 'plist'
 require 'tempfile'
 
 class SafariCookiejar
-    VERSION = '1.0.0'
+    VERSION = '0.0.1'
     def initialize
         reload
     end
