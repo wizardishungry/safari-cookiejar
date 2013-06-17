@@ -22,16 +22,7 @@
 
   $ git clone git://github.com/WIZARDISHUNGRY/safari-cookiejar.git
   $ cd safari-cookiejar
-  $ sudo rake install_gem
-
-== DEVELOPERS:
-
-After checking out the source, run:
-
-  $ rake newb
-
-This task will install any missing dependencies, run the tests/specs,
-and generate the RDoc.
+  $ rake install
 
 == LICENSE:
 
