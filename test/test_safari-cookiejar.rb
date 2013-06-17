@@ -1,8 +1,7 @@
-require "test/unit"
-require "safari-cookiejar"
+require 'helper'
 
 class TestSafariCookiejar < Test::Unit::TestCase
-  def test_sanity
-    #flunk "write tests or I will kneecap you"
+  should "probably rename this file and start testing for real" do
+    flunk "hey buddy, you should probably rename this file and start testing for real"
   end
 end

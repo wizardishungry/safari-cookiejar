@@ -1,8 +1,0 @@
-.autotest
-History.txt
-Manifest.txt
-README.txt
-Rakefile
-bin/safari-cookiejar
-lib/safari-cookiejar.rb
-test/test_safari-cookiejar.rb
